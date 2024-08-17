@@ -1,4 +1,4 @@
-const apiKey = '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';
+const apiKey = 'sk-gzgb2_a4ut8EugWNfc5IuNp2Cn8IKnS8cb0z8kD0xDT3BlbkFJ2_aQFkzaVyR21QsGjHO-tNgxeVVucNSJKl7kxvwTsA';
 const maxTabs = 10; // Limit to open a maximum of 10 tabs
 
 async function generateQueries(userInput) {
