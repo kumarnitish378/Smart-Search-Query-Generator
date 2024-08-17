@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Changed to white for Google-like aesthetic */
+}
+
+#container {
+    display: flex;
+    justify-content: center; /* Centering the content */
+    padding: 20px;
+    align-items: center;
+    background-color: #ffffff; /* Ensuring the container has a white background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+}
+
+#about {
+    font-size: 16px;
+    margin-right: 20px; /* Added margin for spacing */
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-input {
+    padding: 16px; /* Increased padding for better usability */
+    margin-right: 10px;
+    width: 400px; /* Increased width for a more prominent search field */
+    border: 1px solid #dcdcdc; /* Light grey border similar to Google's */
+    border-radius: 24px; /* More rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-size: 16px; /* Consistent font size */
+}
+
+#search-button {
+    padding: 10px 24px; /* Adjusted padding for better button size */
+    border: none;
+    border-radius: 24px; /* Rounded corners similar to the input */
+    background-color: #f8f9fa; /* Light background color */
+    color: #5f6368; /* Dark grey text color */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+}
+
+#search-button:hover {
+    background-color: #e8e8e8; /* Light hover effect */
+}
+
+#logo {
+    font-size: 24px; /* Increased font size for the logo */
+    font-weight: bold; /* Bold font for emphasis */
+    margin-left: 20px; /* Added margin for spacing */
+}
+
+#results {
+    margin: 40px auto; /* Increased top margin for better spacing */
+    padding: 20px;
+    max-width: 800px;
+    background-color: #ffffff; /* White background for results */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.query-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: none; /* No border for a cleaner look */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Light grey background */
+    color: #1a0dab; /* Google's blue link color */
+    text-decoration: none; /* No underline */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.query-item:hover {
+    background-color: #f1f1f1; /* Slightly darker on hover */
+    color: #1a0dab; /* Maintain link color */
+}
+
+.query-item:active {
+    background-color: #e8e8e8; /* Darker when clicked */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3; /* Blue color when checked */
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px); /* Move toggle when checked */
+}
+
+#toggle-label {
+    margin-left: 10px;
+    font-size: 16px;
+}
